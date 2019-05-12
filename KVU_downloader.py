@@ -5,7 +5,7 @@ import sys, os
 import multiprocessing
 from tqdm import tqdm
 USAGE ="""Usage: test.py ending
-https://knigavuhe.ru/book/anafem/   anafem - ending
+https://knigavuhe.org/book/anafem/   anafem - ending
 """
 def download(url):
     #for future
@@ -14,7 +14,7 @@ def download(url):
         response = re.get(url[0])
         file.write(response.content)
 def getData(ending):
-    BASE_URL = "https://knigavuhe.ru/book/"
+    BASE_URL = "https://knigavuhe.org/book/"
     r = re.get(BASE_URL + ending)
     if r.status_code != 200:
         return "bad url"
