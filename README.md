@@ -13,7 +13,7 @@ cd KVU_downloader
 python3 KVU_downloader.py ending -f "file name format" -t num_of_threads
 ```
 
-for https://knigavuhe.ru/book/anafem/
+for https://knigavuhe.org/book/anafem/
 ```
 python3 KVU_downloader.py anafem
 ```
