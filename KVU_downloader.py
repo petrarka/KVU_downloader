@@ -28,7 +28,7 @@ def getData(ending):
     match = reg.findall( r'var player = new BookPlayer\([0-9]{1,}, \[.{1,}]', data)
     if len(match) == 0:
 	    return 'bad data, player not found (litres)'
-    match='' + match[1][match[1].find('['):match[1].find(']')] + ']'
+    match='' + match[0][match[0].find('['):match[0].find(']')] + ']'
     jsonData = json.loads(match,strict=False)
     try:
         os.makedirs(ending)
